@@ -1,6 +1,6 @@
-# 📄 Hệ thống Trích xuất Dữ liệu Bảng biểu từ Tài liệu Gập nếp (V-Fold Table Extraction)
+# 📄 Hệ thống Trích xuất Dữ liệu Bảng biểu từ ảnh chụp tự nhiên
 
-Dự án xây dựng quy trình tự động phát hiện, phân đoạn cấu trúc ô bảng và trích xuất văn bản thành định dạng Excel (`.xlsx`) từ hình ảnh tài liệu thực tế bị biến dạng do nếp gấp chữ V (V-folds). Hệ thống kết hợp mô hình **YOLOv8-Seg** (Instance Segmentation), kỹ thuật cắt gọt mặt nạ cục bộ (Mask-based Cropping), thuật toán gom nhóm hình học và **Tencent Cloud OCR**.
+Dự án xây dựng quy trình tự động phát hiện, phân đoạn cấu trúc ô bảng và trích xuất văn bản thành định dạng Excel (`.xlsx`) từ hình ảnh tài liệu thực tế. Hệ thống kết hợp mô hình **YOLOv8-Seg** (Instance Segmentation), kỹ thuật cắt gọt mặt nạ cục bộ (Mask-based Cropping), thuật toán gom nhóm hình học và **Tencent Cloud OCR**.
 
 ---
 
