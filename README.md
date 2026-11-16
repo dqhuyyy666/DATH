@@ -57,18 +57,18 @@ Quy trình xử lý dữ liệu đi qua 4 giai đoạn chính:
 ### Bước 1: Chuẩn bị dữ liệu
 Đặt ảnh gốc và file nhãn `.json` vào thư mục dữ liệu thô, sau đó chạy script chuẩn hóa để tạo cấu trúc dataset cho YOLO:
 
-    python src/prepare_seg_dataset.py
+    python prepare_seg_dataset.py
 
 ### Bước 2: Huấn luyện mô hình
 Kiểm tra đường dẫn trong `configs/dataset.yaml` và chạy lệnh huấn luyện:
 
-    python src/train_seg.py
+    python train_seg.py
 
 > **Lưu ý:** Nếu chạy trên máy có card đồ họa NVIDIA hoặc Google Colab, đảm bảo tham số `device="0"`. Sau khi hoàn tất, tệp trọng số tốt nhất sẽ được lưu tại `runs/seg/table_cell_seg_fast/weights/best.pt`.
 
 ### Bước 3: Chạy suy luận và xuất file Excel
 Cấu hình API Key của Tencent Cloud OCR và đường dẫn tới file trọng số `best.pt` trong file `src/infer_seg.py`, sau đó thực thi:
 
-    python src/infer_seg.py
+    python infer_seg.py
 
 Kết quả đầu ra bao gồm ảnh trực quan hóa đa giác (debug) và file bảng tính `.xlsx` được tái cấu trúc đầy đủ hàng và cột.
